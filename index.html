@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <div>
+            <label for="sentence">Enter Sentence:</label>
+            <input id="sentence" placeholder="Type your sentence here" required>
+        </div>
+        <button onclick="analyzeSentiment()">Analyze</button>
+        <div id="result" class="hidden">
+            <h2>Result:</h2>
+            <p><b id="sentiment"></b></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
