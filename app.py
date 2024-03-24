@@ -100,4 +100,4 @@ def mock_sentiment_analysis(sentence):
     return sentiments[hash(sentence) % len(sentiments)]
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
